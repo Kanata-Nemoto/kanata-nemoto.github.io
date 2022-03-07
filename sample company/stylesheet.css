@@ -1,0 +1,283 @@
+@charset "uf-8";
+
+body {
+    text-size-adjust: 100%;
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.side-wrapper {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+
+.side-menus {
+    padding-left: 50px;
+}
+
+.side-menus h1 {
+    padding: 25px 0 50px 0;
+}
+
+.logo img {
+    width: 87px;
+    height: 22.42px;
+}
+
+.menus li {
+    margin-bottom: 20px;   
+}
+
+.menus li a {
+    color: white;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 14px;
+}
+
+.menus li a:hover {
+    text-decoration: underline;
+}
+
+.sns-icon {
+    margin-top: 70px;
+}
+
+.sns-icon a {
+    margin-right: 10px;
+}
+
+.sns-icon a:hover {
+    opacity: 0.7;
+}
+
+.sns-icon a img {
+    height: 20px;
+    width: 20px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-bottom: 0.5px solid darkgray;
+    display: none;
+    z-index: 10;
+}
+
+
+header img {
+    width: 87px;
+    height: 22.42px;
+    padding-top: 20px;
+}
+
+header .fa-bars {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+}
+
+.header-cover {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-nav {
+    background-color: black;
+    text-align: left;
+    padding-top: 10px;
+    transform: translateY(-120%);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.drawer-btn:checked ~ .header-nav {
+    transform: translateY(12%);
+}
+
+.drawer-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    transform: scale(1.5);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.header-nav .header-menus li {
+    border-bottom: 1px solid #fff;
+    padding: 15px 0 15px 10px;
+}
+
+.header-nav .header-menus li a {
+    color: #fff;
+    display: block;
+}
+
+.header-nav .header-menus li .fa-angle-right {
+    padding-right: 10px;
+}
+
+.header-nav .header-sns-icon {
+    padding-left: 10px;
+    padding-top: -10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.header-nav .header-sns-icon a {
+    margin-right: 15px;
+} 
+
+.header-nav .header-sns-icon img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.container {
+    width: 80%;
+}
+
+.top-image {
+    width: 100%;
+    height: auto;
+}
+
+.heading {
+    text-align: center;
+    padding: 80px 0;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.heading span {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fff;
+}
+
+.message-text {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom:80px;
+    font-size: 14px;
+}
+
+.photo-list img {
+    width: 33.333%;
+    vertical-align: middle;
+}
+
+.photo-list span img {
+    width: 100%;
+}
+
+.brand-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+}
+
+.brand-list {
+    display: flex;
+}
+
+.brand {
+    width: 25%;
+    padding: 0 3%;
+}
+
+.brand img {
+    width: 100%;
+}
+
+.brand p {
+   text-align: left;
+}
+
+.project-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 370px;
+    height: 225px;
+    padding: 0 20px 0px 20px;
+    float: left;
+}
+
+.company-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 230px;
+}
+
+.address-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+address {
+    padding-right: 10%;
+}
+
+.map {
+    width: 60%;
+    height: 200px;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 50px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #0066ff;
+}
+
