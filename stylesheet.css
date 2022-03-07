@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+#header {
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-logo {
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.header-nav ul {
+    justify-content: right;
+}
+
+.nav ul li {
+    padding: 0 20px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#header img {
+    width: 100%;
+}
+
+#about-wrapper {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 60px auto 80px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#about-wrapper p {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+#skills-wrapper {
+    max-width: 800px;
+    margin: 0px auto 80px;
+    padding: 0 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-left {
+    padding-right: 5%;
+}
+
+.skills-left h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.skills-right {
+    padding-left: 5%;
+    margin: auto 0;
+}
+
+.skills-right p {
+    font-size: 14px;
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+#works-wrapper {
+    max-width: 1000px;
+    margin: 0px auto 80px;
+    padding: 0 20px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.work {
+    width: 45%;
+    border: 1px solid grey;
+    margin: 10px;
+}
+
+.work:hover {
+    opacity: 0.5;
+}
+
+.work img {
+    width: 100%;
+}
+
+#contact-wrapper {
+    margin: 0px auto 40px;
+    text-align: center;
+}
+
+#contact-wrapper a {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+#contact-wrapper a:hover {
+    opacity: 0.6;
+}
+
+#footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.fa-css {
+    color: black;
+}
+
+.footer-nav ul {
+    padding-top: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .header-logo {
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    .header-nav ul {
+        justify-content: center;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .skills-left h3 {
+        font-size: 15px;
+    }
+
+    #about-wrapper p {
+        font-size: 12px;
+    }
+
+    #skills-wrapper p {
+        font-size: 12px;
+    }
+
+    .work {
+        width: 90%;
+    }
+
+    #contact-wrapper a {
+        font-size: 12px;
+        padding: 7px;
+    }
+}
