@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+body {
+    color: #333;
+    font-size: 0.875rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10
+}
+
+.container {
+    max-width: 1360px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header-logo img {
+    width: 180px;
+    height: 20.76px;
+}
+
+.nav_toggle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.nav_toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+  }
+
+.nav_toggle span:nth-child(1) {
+    top: 10px;
+}
+
+.nav_toggle span:nth-child(2) {
+    bottom: 10px;
+}
+
+.show .nav_toggle span {
+    background-color: #fff;
+}
+
+.show .nav_toggle span:nth-child(1) {
+    -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+.show .nav_toggle span:nth-child(2) {
+    -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    color: #fff;
+    padding: 36px 50px;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+
+.nav li {
+    margin-bottom: 14px;
+}
+.show .nav {
+    left: 0;
+    opacity: 1;
+}
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+}
+.show #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/*products-wrapper*/
+
+#top {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.item p {
+    font-size: 12px;
+    width: 93%;
+    padding-bottom: 5px;
+}
+
+.item img {
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+.view-more {
+    margin: 0 auto;
+}
+
+.view-more a:hover {
+    opacity: 0.8;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+.copy-right {
+    font-size: 10px;
+}
+
+#products {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.heading {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-number {
+    display: flex;
+    justify-content: center;
+}
+
+.page-number li {
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+#about {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+#about p {
+    margin-bottom: 30px;
+    line-height: 1.9;
+}
+
+#product {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;  
+    margin-bottom: 60px;
+}
+
+.item-image {
+    width: 50%;
+}
+
+.item-image img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-text {
+    width: 45%;
+}
+
+.product-text p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.product-definition {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-definition dt {
+    font-weight: normal;
+    width: 30%;
+}
+
+.product-definition dd {
+    width: 70%;
+}
+
+.to-products {
+    display: block;
+    text-align: center;
+}
+
+#company {
+    max-width: 600px;
+}
+
+.company-definition {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company-definition dt {
+    width: 30%;
+    font-weight: normal;
+    padding: 20px 10px;
+    border-bottom: 1px solid #dcdbdb;
+}
+
+.company-definition dd {
+    width: 70%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #dcdbdb;
+}
+
+.company-definition dd:last-of-type, .company-definition dt:last-of-type {
+    border-bottom: none;
+}
+
+.ggmap {
+    margin-top: 20px;
+}
+
+#company iframe {
+    height: 300px;
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+@media (max-width: 900px) {
+    .item {
+        width: 50%;
+    }
+}
