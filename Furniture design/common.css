@@ -284,4 +284,36 @@ body {
     .item {
         width: 50%;
     }
+
+    #product {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .item-image {
+        width: 100%;
+    }
+    
+    .product-text {
+        margin-top: 10px;
+        width: 90%;
+    }
+    
+    .product-definition {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        justify-content: center;
+        padding-left: 5%;
+        margin-bottom: 10px;
+    }
 }
