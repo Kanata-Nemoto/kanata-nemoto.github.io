@@ -189,3 +189,10 @@ body {
         padding: 7px;
     }
 }
+
+@media (max-width: 600px) {
+    #header img {
+        height: 130px;
+        object-fit: cover;
+    }
+}
